@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <courier>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>CourierShippingMethod\Model\Carrier\Courier</model>
+                <name>Kurier</name>
+                <price>10.00</price>
+                <title>Kurier</title>
+                <specificerrmsg></specificerrmsg>
+                <handling_type>F</handling_type>
+            </courier>
+            <courierwithcashondelivery>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>CourierShippingMethod\Model\Carrier\CourierWithCashOnDelivery</model>
+                <name>Kurier - Płatność za pobraniem</name>
+                <price>10.00</price>
+                <title>Kurier - Płatność za pobraniem</title>
+                <specificerrmsg></specificerrmsg>
+                <handling_type>F</handling_type>
+            </courierwithcashondelivery>
+        </carriers>
+    </default>
+</config>
